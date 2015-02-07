@@ -12,18 +12,20 @@
 import sys
 from operator import *
 
-#result_file_name input format:
-#---user1 recom1:s1,recom2:s2,.. click1,click2...
-#---user2 recom1:s1,recom2:s2,.. click1,click2...
+"""
+result_file_name input format:
+---user1 recom1:s1,recom2:s2,.. click1,click2...
+---user2 recom1:s1,recom2:s2,.. click1,click2...
 
-#obj_file input format:
-#---user1 item1
-#---user1 item2
-#---user2 item1
+obj_file input format:
+---user1 item1
+---user1 item2
+---user2 item1
 
-#candicate_item_file input format:
-#---item1
-#---item2
+candicate_item_file input format:
+---item1
+---item2
+"""
 
 def evaluate(result_file_name, N, probility, obj_file, candicate_item_file) :
     recom_dict, obj_dict = read_result(result_file_name, N, probility)
