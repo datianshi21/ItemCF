@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 #########################################################################
-# File Name:    evaluate_file.py
+# File Name:    evaluate.py
 # Author:       hongchunxiao
 # mail:         hongchunxiao@gmail.com
 # Created  Time: 2013/12/29 12:33:21 (Sunday December)
@@ -170,7 +170,7 @@ def precision(obj_dict, recom_dict) :
 
 if __name__ == '__main__' :
     if len(sys.argv) < 4 :
-        print 'usage: python evaluate_file.py result_file.txt topn probility candicate_item_file [obj_file]'
+        print 'usage: python evaluate.py result_file.txt topn probility candicate_item_file [obj_file]'
         sys.exit(-1)
     result_file = sys.argv[1]
     topn = int(sys.argv[2]) #recommend only topn item for per-user
