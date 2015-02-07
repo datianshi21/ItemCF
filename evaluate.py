@@ -175,7 +175,7 @@ if __name__ == '__main__' :
     result_file = sys.argv[1]
     topn = int(sys.argv[2]) #recommend only topn item for per-user
     probility = float(sys.argv[3]) #recommend only when the probility is big than it
-	candicate_item_file = sys.argv[4] #the candicate item set for recommended
+    candicate_item_file = sys.argv[4] #the candicate item set for recommended
     if len(sys.argv) == 6:
         obj_file = sys.argv[5] #the item that user visits at object date
     else :
